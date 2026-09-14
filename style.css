@@ -1,4 +1,7 @@
-body, html{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,
+html {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -7,10 +10,91 @@ body, html{
     justify-content: center;
     height: 100vh;
     background-color: #333;
+    color: #ddd;
+    font-family: 'Montserrat' ;
+}
+h2,
+p {
+    margin: 0px;
+    padding: 0px;
 }
 
 
-.capa{
+.capa {
     height: 300px;
     width: 300px;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 5px
+}
+
+
+.duracao {
+    margin-top: 30px;
+    width: 300px;
+}
+
+.barra {
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 0;
+    background-color: #333;
+}
+
+.ponto {
+    border-radius: 50%;
+    background-color: #eee;
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+}
+
+.tempo {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 5px;
+}
+
+svg {
+    fill: white;
+}
+
+.play,
+.pause {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.seta-d,
+.seta-e {
+    height: 20px;
+    cursor: pointer;
+}
+
+.player {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.pause {
+    display: none;
 }
